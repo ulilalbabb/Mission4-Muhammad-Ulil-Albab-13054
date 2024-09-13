@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>To Do List</h1>
+        <div class="profile">
+            <img class="profile-picture" src="./assets/ulil.jpg" alt="profile">
+            <div class="profile-info">
+                <p class="name">Muhammad Ulil Albab</p>
+                <p class="job">Fullstack Developer</p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Add New List</h2>
+            <form id="form">
+                <label for="task-input">Description :</label>
+                <input type="text" id="task-input" autocomplete="off" placeholder="Enter List" required>
+                <label for="date-input">Select Date :</label>
+                <input type="date" id="date-input" required>
+                <label for="list-level">Priority :</label>
+                <select id="level-input">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button id="btn-submit">Submit</button>
+                <h3>Upcoming Tasks</h3>
+                <hr>
+                <ul id="task-list"></ul>
+                <h3>Completed Tasks</h3>
+                <hr>
+                <ul id="completed-task-list"></ul>
+                <button id="btn-delete">Delete All Tasks</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 To-Do List by Muhammad Ulil Albab. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
